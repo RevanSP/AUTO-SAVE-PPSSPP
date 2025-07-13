@@ -216,7 +216,7 @@ function queueFile(filePath) {
   const pathParts = relativePath.split(path.sep);
 
   const isInGameFolder =
-    pathParts.length >= 2 && /^UL[A-Z]{2}\d{5}$/i.test(pathParts[0]);
+    pathParts.length >= 2 && /^UL[A-Z]{2}\d{5}[A-Z0-9]*$/i.test(pathParts[0]);
 
   const validExtensions = [".bin", ".png", ".sfo"];
   const hasValidExtension = validExtensions.includes(fileExtension);
