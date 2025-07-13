@@ -175,7 +175,7 @@ const validExtensions = ['.bin', '.png', '.sfo'];
 ### Game Folder Pattern
 Modify the regex pattern for game folders:
 ```js
-const isInGameFolder = pathParts.length >= 2 && /^UL[A-Z]{2}\d{5}$/i.test(pathParts[0]);
+const isInGameFolder = pathParts.length >= 2 && /^UL[A-Z]{2}\d{5}[A-Z0-9]*$/i.test(pathParts[0]);
 // Current pattern matches: ULUS12345, ULES01234, ULJM05678, etc.
 ```
 
