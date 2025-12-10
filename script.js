@@ -4,7 +4,7 @@ const path = require("path");
 const fs = require("fs");
 const https = require("https");
 
-const WATCH_FOLDER = "C:\\Users\\LENOVO\\Documents\\PPSSPP\\PSP\\SAVEDATA";
+const WATCH_FOLDER = "C:\\Users\\LENOVO\\OneDrive\\Dokumen\\PPSSPP\\PSP\\SAVEDATA";
 const MAX_RETRIES = 3;
 const RETRY_DELAY = 2000;
 const DEBOUNCE_DELAY = 5000;
